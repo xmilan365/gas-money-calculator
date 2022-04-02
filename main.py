@@ -1,17 +1,12 @@
-# ideas & improvements
-# TODO: gasoline prices by sa mali odvijat od krajiny z ktorej ide, nie natvrdo zo slovenska
-# TODO: nejako poriesit mozne errory, napr. neexistujuci model auta, neexistujuca trasa medzi A a B,...
-# TODO: PRI dlhsich trasach sa oplati zstit kde natankovat
-
 # imports
 import requests
-import config # TODO: nezabudni pridat config.py do .gitignore
+import config 
 from unidecode import unidecode
 from bs4 import BeautifulSoup
 
 # constants
 CONST_MATRIX_API_URL = "https://api.distancematrix.ai/maps/api/distancematrix/json?"
-CONST_METRIX_API_KEY_TOKEN = config.MATRIX_API_TOKEN # "X1K8MkAtUBl94BbhgKBqRgrDHYKEb"
+CONST_METRIX_API_KEY_TOKEN = config.MATRIX_API_TOKEN 
 CONST_PETROL_URL = "https://www.globalpetrolprices.com/Slovakia/gasoline_prices/"
 CONST_SPRITMONITOR_URL = "https://www.spritmonitor.de/en/"
 
